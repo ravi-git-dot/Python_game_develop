@@ -1,0 +1,46 @@
+#Netflix logo creation 
+
+import turtle
+
+point = turtle.Turtle()
+point.goto(-200,200)
+point.fillcolor("black")
+point.begin_fill()
+for i in range(4):
+    point.forward(400)
+    point.right(90)
+point.end_fill()
+
+point.goto(-80,140)
+point.color("red")
+point.fillcolor("red")
+point.begin_fill()
+point.goto(-80,-140)
+point.goto(-20,-140)
+point.goto(-20, 140)
+point.goto(-80, 140)
+point.end_fill()
+
+point.penup()
+point.goto(80,140)
+point.pendown()
+point.fillcolor("red")
+point.begin_fill()
+point.goto(80,-140)
+point.goto(20,-140)
+point.goto(20, 140)
+point.goto(80, 140)
+point.end_fill()
+
+point.penup()
+point.goto(-80,140)
+point.pendown()
+point.fillcolor("red")
+point.begin_fill()
+point.goto(-20, 140)
+point.goto(80, -140)
+point.goto(20, -140)
+point.goto(-80, 140)
+point.end_fill()
+point.hideturtle()
+turtle.done()
